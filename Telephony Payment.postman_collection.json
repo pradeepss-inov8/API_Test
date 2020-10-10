@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "895ab364-6bba-4ecf-94ae-ce19c0c7c539",
+		"name": "Telephony Payment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Paymark Status",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "NZTAtst2015!",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "101377",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.paymarkclick.co.nz/api/ivrpayments/registrar/rest/getstatus?accountId=621422&registrationId=166300",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"paymarkclick",
+						"co",
+						"nz"
+					],
+					"path": [
+						"api",
+						"ivrpayments",
+						"registrar",
+						"rest",
+						"getstatus"
+					],
+					"query": [
+						{
+							"key": "accountId",
+							"value": "621422"
+						},
+						{
+							"key": "registrationId",
+							"value": "166300"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
